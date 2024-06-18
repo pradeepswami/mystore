@@ -7,6 +7,8 @@
   "dependencies": {
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "react-router-dom": "6.11.2",
+    "styled-components": "^6.1.11",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
