@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mystore/core-ui": ["libs/shared/core-ui/src/index.ts"],
       "@mystore/feature-book": ["libs/books/feature-books/src/index.ts"]
     }
   },

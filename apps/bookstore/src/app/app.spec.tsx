@@ -5,12 +5,20 @@ import App from './app';
 
 describe('App', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<MemoryRouter><App /></MemoryRouter>);
+    const { baseElement } = render(
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>
+    );
     expect(baseElement).toBeTruthy();
   });
 
   it('should have a greeting as the title', () => {
-    const { getByText } = render(<MemoryRouter><App /></MemoryRouter>);
+    const { getByText } = render(
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>
+    );
     expect(getByText(/Bookstore/gi)).toBeTruthy();
   });
 });
