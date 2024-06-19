@@ -1,7 +1,8 @@
 # Mystore
 
+
+cd current lib dir
 ```
-cd lib dir
 npx nx generate @nx/react:component --name=Button --directory=/button --export=true --no-interactive --dry-run
 ```
 
