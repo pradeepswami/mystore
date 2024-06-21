@@ -2,6 +2,7 @@ import { Button } from '@mystore/core-ui';
 import styled from 'styled-components';
 export interface BookProps {
   book: any;
+  onAdd: (book: any) => void;
 }
 const StyledBook = styled.div`
   display: flex;
@@ -22,13 +23,17 @@ const StyledBook = styled.div`
   }
 `;
 
-export const Book = ({ book }: BookProps) => {
+export const Book = ({ book, onAdd }: BookProps) => {
+  const handleAdd = () => onAdd(book);
   return (
     <StyledBook>
       <span className="title">
         {book.title} by <em>{book.author}</em>
       </span>
       <span className="price">${book.price}</span>
+      <span>
+        <Button onClick={handleAdd}>Add to cart</Button>
+      </span>
     </StyledBook>
   );
 };

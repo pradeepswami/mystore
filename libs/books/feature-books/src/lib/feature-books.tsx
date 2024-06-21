@@ -16,7 +16,7 @@ export function FeatureBooks() {
   return (
     <>
       <h2>Books</h2>
-      <Books books={books} />
+      <Books books={books} onAdd={book => alert(`Add bool ${book.title}`)}/>
     </>
   );
 }
