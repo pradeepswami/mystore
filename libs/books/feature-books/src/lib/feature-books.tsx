@@ -1,4 +1,3 @@
-import styles from './feature-books.module.css';
 import { useEffect, useState } from 'react';
 import { getBooks } from '@mystore/books-data-access';
 import { Books } from '@mystore/books/ui';
