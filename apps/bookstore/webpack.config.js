@@ -8,6 +8,12 @@ module.exports = {
   },
   devServer: {
     port: 4200,
+    proxy: [
+      {
+        context: ['/api'],
+        target: 'http://localhost:3333',
+      },
+    ],
   },
   plugins: [
     new NxAppWebpackPlugin({
