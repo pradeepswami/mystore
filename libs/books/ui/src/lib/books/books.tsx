@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { Book } from '../book/book';
+import { IBook } from '@mystore/shared/model';
 export interface BooksProps {
-  books: any[];
+  books: IBook[];
   onAdd: (book: any) => void
 }
 const StyledBooks = styled.div`

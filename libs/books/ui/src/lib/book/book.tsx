@@ -1,7 +1,8 @@
 import { Button } from '@mystore/core-ui';
+import { IBook } from '@mystore/shared/model';
 import styled from 'styled-components';
 export interface BookProps {
-  book: any;
+  book: IBook;
   onAdd: (book: any) => void;
 }
 const StyledBook = styled.div`
