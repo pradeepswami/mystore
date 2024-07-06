@@ -14,6 +14,8 @@ import {
 
 const StyledApp = styled.div``;
 
+let tet = '35';
+
 export function App() {
   return (
     <StyledApp>
@@ -22,7 +24,7 @@ export function App() {
         <h1>Bookstore</h1>
         <NavigationList>
           <NavigationItem>
-            <Link to="/books">Books</Link>
+            <Link to="/books">Books!</Link>
           </NavigationItem>
         </NavigationList>
       </Header>
