@@ -11,6 +11,8 @@ import {
   NavigationList,
 } from '@mystore/core-ui';
 
+import { CartFeature } from '@mystore/cart-feature';
+
 const StyledApp = styled.div``;
 
 export function App() {
@@ -22,12 +24,14 @@ export function App() {
         <NavigationList>
           <NavigationItem>
             <Link to="/books">Books!</Link>
+            <Link to="/cart">Cart</Link>
           </NavigationItem>
         </NavigationList>
       </Header>
       <Main>
         <Routes>
           <Route path="/books" element={<FeatureBooks />} />
+          <Route path="/cart" element={<CartFeature />} />
           <Route path="/" Component={() => <Navigate to="/books" />} />
         </Routes>
       </Main>

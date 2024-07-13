@@ -18,6 +18,7 @@
     "paths": {
       "@mystore/books-data-access": ["libs/books/data-access/src/index.ts"],
       "@mystore/books/ui": ["libs/books/ui/src/index.ts"],
+      "@mystore/cart-feature": ["libs/cart/feature/src/index.ts"],
       "@mystore/cart/cart-data-access": ["libs/cart/data-access/src/index.ts"],
       "@mystore/core-ui": ["libs/shared/core-ui/src/index.ts"],
       "@mystore/feature-book": ["libs/books/feature-books/src/index.ts"],
