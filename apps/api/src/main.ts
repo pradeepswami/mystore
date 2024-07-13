@@ -5,7 +5,7 @@
 
 import express from 'express';
 import * as path from 'path';
-import {IBook} from '@mystore/shared/model'
+import { IBook, ICart } from '@mystore/shared/model';
 const app = express();
 
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
@@ -53,6 +53,12 @@ app.get('/api/books', (req, res) => {
     },
   ];
   res.send(books);
+});
+
+app.post('/api/checkout', (req, res) => {
+  const cart: ICart = req.body;
+  console.log('Checking out ....', JSON.stringify(cart, null, 2));
+  res.send({ order: '1234' });
 });
 
 const port = process.env.PORT || 3333;
