@@ -3,7 +3,7 @@ import { IBook } from '@mystore/shared/model';
 import styled from 'styled-components';
 export interface BookProps {
   book: IBook;
-  onAdd: (book: any) => void;
+  onAdd: (book: IBook) => void;
 }
 const StyledBook = styled.div`
   display: flex;

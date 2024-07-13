@@ -5,7 +5,6 @@ import { Route, Routes, Link, Navigate } from 'react-router-dom';
 import { FeatureBooks } from '@mystore/feature-book';
 import {
   GlobalStyles,
-  Button,
   Header,
   Main,
   NavigationItem,
@@ -13,8 +12,6 @@ import {
 } from '@mystore/core-ui';
 
 const StyledApp = styled.div``;
-
-let tet = '35';
 
 export function App() {
   return (

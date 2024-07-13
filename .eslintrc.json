@@ -26,16 +26,33 @@
                   "type:feature",
                   "type:ui",
                   "type:util",
-                  "type:data-access"
+                  "type:data-access",
+                  "type:model"
                 ]
               },
               {
                 "sourceTag": "type:ui",
-                "onlyDependOnLibsWithTags": ["type:ui", "type:util"]
+                "onlyDependOnLibsWithTags": [
+                  "type:ui",
+                  "type:util",
+                  "type:model"
+                ]
               },
               {
                 "sourceTag": "type:util",
                 "onlyDependOnLibsWithTags": ["type:util"]
+              },
+              {
+                "sourceTag": "type:data-access",
+                "onlyDependOnLibsWithTags": ["type:model"]
+              },
+              {
+                "sourceTag": "type:model",
+                "onlyDependOnLibsWithTags": ["type:model"]
+              },
+              {
+                "sourceTag": "type:backend",
+                "onlyDependOnLibsWithTags": ["type:model"]
               }
             ]
           }

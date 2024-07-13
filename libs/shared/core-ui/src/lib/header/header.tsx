@@ -1,4 +1,3 @@
-import styles from './header.module.css';
 import styled from 'styled-components';
 import { HTMLAttributes } from 'react';
 

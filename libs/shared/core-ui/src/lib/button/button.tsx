@@ -1,4 +1,4 @@
-import styles from './button.module.css';
+import './button.module.css';
 import styled from 'styled-components';
 import { ButtonHTMLAttributes } from 'react';
 

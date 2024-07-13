@@ -3,7 +3,7 @@ import { Book } from '../book/book';
 import { IBook } from '@mystore/shared/model';
 export interface BooksProps {
   books: IBook[];
-  onAdd: (book: any) => void
+  onAdd: (book: IBook) => void;
 }
 const StyledBooks = styled.div`
   border: 1px solid #ccc;
@@ -13,7 +13,7 @@ export const Books = ({ books, onAdd }: BooksProps) => {
   return (
     <StyledBooks>
       {books.map((book) => (
-        <Book key={book.id} book={book} onAdd={onAdd}/>
+        <Book key={book.id} book={book} onAdd={onAdd} />
       ))}
     </StyledBooks>
   );
