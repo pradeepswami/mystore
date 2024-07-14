@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { Route, Routes, Link, Navigate } from 'react-router-dom';
 
-import { FeatureBooks } from '@mystore/feature-book';
+import { FeatureBooks } from '@mystore/books-feature';
 import {
   GlobalStyles,
   Header,

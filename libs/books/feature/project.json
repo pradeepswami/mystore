@@ -1,9 +1,9 @@
 {
-  "name": "feature-books",
+  "name": "books-feature",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/books/feature-books/src",
+  "sourceRoot": "libs/books/feature/src",
   "projectType": "library",
   "tags": ["type:feature", "scope:books"],
-  "// targets": "to see all targets run: nx show project feature-books --web",
+  "// targets": "to see all targets run: nx show project books-feature --web",
   "targets": {}
 }

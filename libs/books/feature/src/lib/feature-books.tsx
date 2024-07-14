@@ -6,7 +6,7 @@ import { IBook } from '@mystore/shared/model';
 export function FeatureBooks() {
   const [books, setBooks] = useState<IBook[]>([]);
   useEffect(
-    () => { 
+    () => {
       getBooks().then(setBooks);
     },
     [
@@ -17,7 +17,7 @@ export function FeatureBooks() {
   return (
     <>
       <h2>Books</h2>
-      <Books books={books} onAdd={book => alert(`Add bool ${book.title}`)}/>
+      <Books books={books} onAdd={(book) => alert(`Add bool ${book.title}`)} />
     </>
   );
 }
